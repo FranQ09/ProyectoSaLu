@@ -1,0 +1,28 @@
+
+# Archivos temporales de Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Memoria personal de SaLu
+memoria.json
+categorias_memoria.json
+SaluPrincipal/memoria.json
+SaluPrincipal/categorias_memoria.json
+
+# Documentos que se suben para analizar
+uploads/*
+!uploads/.gitkeep
+
+# Entornos virtuales
+.venv/
+venv/
+
+# Configuración y secretos locales
+.env
+.env.*
+!.env.example
+
+# Archivos del sistema
+.DS_Store
+Thumbs.db
