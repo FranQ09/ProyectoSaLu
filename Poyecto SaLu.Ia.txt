@@ -1,0 +1,33 @@
+### 🔧 Paso a Paso
+
+**Paso 1: Instalar Ollama**
+Para comenzar, necesitas instalar Ollama, una herramienta que te permite ejecutar modelos de IA en tu sistema.
+1. Ve a [ollama.com](https://ollama.com) y descarga la versión para tu sistema operativo.
+2. Sigue las instrucciones de instalación para configurar Ollama en tu computadora.
+
+**Paso 2: Ejecutar el modelo Qwen3:4b**
+Con Ollama instalado, ejecuta el siguiente comando para llamar a la IA Qwen3 (4 billones de parámetros):
+```bash
+ollama run qwen3:4b
+```
+⚠️ **Nota importante**:
+- El comando `ollama run qwen3:4b` es un ejemplo. En la práctica, los nombres de modelos en Ollama pueden variar (por ejemplo, `qwen` en lugar de
+`qwen3:4b`).
+- Asegúrate de tener la versión correcta del modelo instalado en Ollama. Si no funciona, revisa los modelos disponibles con `ollama list`.
+
+**Paso 3: Personalizar tu IA Loco**
+Ahora que tienes el modelo en ejecución, puedes personalizar SaLu con tus propias reglas y funciones. Por ejemplo:
+- Crea un archivo `salu.py` con tus instrucciones.
+- Usa comandos como `ollama create salu` para definir tu IA loca.
+
+**Paso 4: Ejecutar tu IA Loco**
+Para probar tu IA, ejecuta:
+```bash
+ollama run salu
+```
+
+---
+
+### 🚨 Advertencia
+¡No te preocupes si el comando no funciona! La IA loca es para ser divertida, no para ser profesional. Si el modelo no está disponible, prueba con
+`ollama run qwen:4b` o busca en la documentación de Ollama.

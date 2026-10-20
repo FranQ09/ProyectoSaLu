@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>SaLu | Neural Interface</title>
+<link rel="stylesheet" href="/static/style.css">
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/dompurify@3.2.6/dist/purify.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+<header class="topbar"><div class="brand">S<span>a</span>Lu <small>NEURAL INTERFACE</small></div><div class="topstatus"><i id="dot"></i><span id="status">Comprobando Ollama…</span></div><div class="topright">LOCAL AI <b>◆</b></div></header>
+<main class="layout">
+<aside class="left">
+<section class="panel"><h3>◈ SISTEMA</h3><div class="statrow"><span>Motor local</span><b id="engine">Ollama</b></div><div class="statrow"><span>Modelo</span><b id="model">—</b></div><div class="statrow"><span>Memoria guardada</span><b id="memcount">0</b></div><div class="meter"><span></span></div></section>
+<section class="panel"><h3>▣ ARCHIVOS</h3><label class="dropzone" id="dropzone"><input type="file" id="filepick" multiple accept=".pdf,.docx,.txt,.py,.js,.html,.css,.json,.md,.csv,.xlsx,.xlsm,.png,.jpg,.jpeg,.webp,.bmp"><span class="uploadicon">＋</span><b>Adjuntar documentos</b><small>PDF · DOCX · PY · XLSX · TXT · imágenes</small></label><div id="filelist" class="filelist"></div><p class="hint">Los archivos se analizan localmente. Los documentos adjuntos se incluyen en el contexto de tus preguntas.</p></section>
+<section class="panel"><h3>▧ MEMORIA</h3><button class="secondary full" id="showmemory">Consultar memoria</button><div id="memorybox"></div></section>
+<div class="leftfoot">SALU CORE <span>● LOCAL</span></div>
+</aside>
+<section class="core">
+<div class="eyebrow">SISTEMA DE ASISTENCIA LOCAL <span> / </span> INTERFAZ NEURAL</div>
+<div class="orb-wrap" id="orbwrap"><div class="orb-ring ring1"></div><div class="orb-ring ring2"></div><div class="orb-ring ring3"></div><div class="orb"><div class="orb-core"><div class="wave"><i></i><i></i><i></i><i></i><i></i></div></div></div></div>
+<h1>SaLu</h1><p class="coretag">INTELIGENCIA LOCAL · <span id="corestate">EN ESPERA</span></p>
+<div class="corehint" id="corehint">Listo para ayudarte con tus ideas, documentos y ejercicios.</div>
+<div class="quick"><button data-prompt="Resume los archivos adjuntos y enumera las ideas principales.">Resumir archivos</button><button data-prompt="Explícame paso a paso el contenido de los documentos adjuntos.">Explicar documentos</button><button data-prompt="Revisa el código adjunto y detecta posibles errores.">Revisar código</button></div>
+</section>
+<aside class="chat panel"><div class="chathead"><div><h2>Conversación</h2><small>Sesión local de SaLu</small></div><button class="secondary" id="clear">Limpiar</button></div><div id="messages" class="messages"><div class="msg assistant"><div class="who">◆ SALU</div><div class="bubble">¡Hola! Soy SaLu. Puedes conversar conmigo y adjuntar archivos para que analicemos su contenido.</div></div></div><div class="compose"><div id="selectedhint">Sin archivos adjuntos seleccionados</div><textarea id="input" rows="2" placeholder="Escribe un mensaje… (Enter para enviar)"></textarea><div class="composebottom"><span>ENTER ↵ ENVIAR</span><button id="send" class="send">➤</button></div></div></aside>
+</main>
+<script src="/app.js"></script>
+<script src="/static/app.js" defer></script>
+</body></html>

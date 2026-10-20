@@ -1,0 +1,2 @@
+python app.py
+ejecutar desde la terminal en esta ubicación
